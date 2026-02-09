@@ -1,0 +1,304 @@
+
+@font-face {
+    font-family: upheaval;
+    src: url('upheavtt.ttf');
+}
+
+@font-face {
+    font-family: pokeicons;
+    src: url('EssentiarumVG\ [Web].ttf');
+}
+
+body {
+    margin: 0;
+    background-image: 
+        repeating-radial-gradient( circle, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 3px, transparent 1px, transparent 6px ),
+        linear-gradient(to right, #46c4e0 , #bdf3ff, #bdf3ff, #bdf3ff, #46c4e0);
+    background-size: 
+        6px 6px,
+        cover;
+    background-repeat: 
+        repeat,
+        no-repeat;
+    background-attachment: fixed;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.headingbanner {
+    width: 100vw;
+    left: 0px;
+    margin-top: 0px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    background-image: linear-gradient(to right, #f7c559 , #f5ea89, #f5ea89, #f7c559);
+    box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.15),
+        inset 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+.headerimg {
+    height: 250px;
+}
+
+h1 {
+    color: #215924;
+    font-family: upheaval;
+    font-size: 65px;
+    max-width: 650px;
+    text-align: left;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+h2 {
+    color: #215924;
+    font-family: upheaval;
+    font-size: 40px;
+    max-width: 900px;
+    margin: 1em auto;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    max-width: 900px;
+    margin: 1em auto;
+}
+
+.icon {
+    font-family: pokeicons;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 0.5em;
+}
+
+.lasttext {
+    padding-bottom: 3em;
+}
+
+
+ol {
+    font-family: sans-serif;
+    line-height: 1.5em;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.leftheader {
+    background-image: linear-gradient(to right, #f7c559 , #f5ea89, #f5ea89, #f7c559);
+    height: 1em;
+    display: flex;
+    max-width: 875px;
+    align-items: center;
+    padding: 0.5em;
+
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 8px;
+
+    box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.15),
+        inset 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+.battle {
+    max-width: 800px;
+    line-height: 2em;
+        background: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 8px;
+
+    box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.15),
+        inset 0 -2px 4px rgba(0,0,0,0.05);
+
+    padding: 1.5em;
+    max-width: 850px;
+    margin: 1.5em auto;
+}
+
+.battletype {
+    color: white;
+    height: 1.25em;
+    width: auto;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.centerimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 1em auto;
+    padding: 1em auto;
+}
+
+.vertimg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 1em auto;
+    padding: 1em auto;
+}
+
+.introtextwithimage {
+    max-width: 550px;
+    margin: 1em;
+}
+
+.dualtypetext {
+    max-width: 200px;
+}
+
+.centerimg img {
+    padding: .5em;
+    margin: 2em;
+}
+
+.recessed-card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 8px;
+
+    box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.15),
+        inset 0 -2px 4px rgba(0,0,0,0.05);
+
+    padding: 1.5em;
+    max-width: 850px;
+    margin: 1.5em auto;
+}
+
+.vertcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: #215924;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+button {
+    width: 250px;
+    height: 3em;
+    margin: 15px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #f7c559 , #f5ea89, #f5ea89, #f7c559);
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+.typecontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 700px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.typebadge {
+    display: flex;
+    color: white;
+    align-items: center;
+    height: fit-content;
+    width: 140px;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    font-size: 1.25em;
+    border: white 2px solid;
+}
+
+
+#bug {
+    background-color: #94BC4A;
+}
+
+#dark {
+    background-color: #736C75;
+}
+
+#dragon {
+    background-color: #6A7BAF;
+}
+
+#electric {
+    background-color: #E5C531;
+}
+
+#fairy {
+    background-color: #E397D1;
+}
+
+#fighting {
+    background-color: #CB5F48;
+}
+
+#fire {
+    background-color: #EA7A3C;
+}
+
+#flying {
+    background-color: #7DA6DE;
+}
+
+#ghost {
+    background-color: #846AB6;
+}
+
+#grass {
+    background-color: #71C558;
+}
+
+#ground {
+    background-color: #CC9F4F;
+}
+
+#ice {
+    background-color: #70CBD4;
+}
+
+#normal {
+    background-color: #AAB09F;
+}
+
+#poison {
+    background-color: #B468B7;
+}
+
+#psychic {
+    background-color: #E5709B;
+}
+
+#rock {
+    background-color: #B2A061;
+}
+
+#steel {
+    background-color: #89A1B0;
+}
+
+#water {
+    background-color: #539AE2;
+}
