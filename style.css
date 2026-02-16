@@ -21,6 +21,8 @@ body {
         repeat,
         no-repeat;
     background-attachment: fixed;
+
+    cursor: none;
 }
 
 .content {
@@ -44,7 +46,10 @@ body {
 }
 
 .headerimg {
+    background-image: url('pikachu.png');
+    background-size: contain;
     height: 250px;
+    width: 250px;
 }
 
 h1 {
@@ -301,4 +306,146 @@ button {
 
 #water {
     background-color: #539AE2;
+}
+
+
+/* Script stuff */
+
+
+#pokeCursor {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    pointer-events: none;
+}
+
+
+
+/* Dark mode */
+
+/*input[type=checkbox] {
+    line-height: 1.5em;
+    max-width: 900px;
+    margin: 1em auto;
+}
+*/
+
+/*ASK ABOUT THIS!!!*/
+input {
+    display: inline-block;
+}
+
+body.dark-mode{
+    margin: 0;
+    background-image: 
+        repeating-radial-gradient( circle, rgba(6,33,69,0.12) 0px, rgba(6,33,69,0.12) 3px, transparent 1px, transparent 6px ),
+        linear-gradient(to right, #072e61 , #164480, #164480, #164480, #072e61);
+    background-size: 
+        6px 6px,
+        cover;
+    background-repeat: 
+        repeat,
+        no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+
+/*    cursor: none; */
+}
+
+body.dark-mode .dualtypetext {
+    color: black;
+}
+
+body.dark-mode .cardtext {
+    color: black;
+}
+
+body.dark-mode .headingbanner {
+    width: 100vw;
+    left: 0px;
+    margin-top: 0px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    background-image: linear-gradient(to right, #240e42 , #3c1c69, #3c1c69, #240e42);
+    box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.15),
+        inset 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+body.dark-mode h1{
+    color: #72bddb;
+    font-family: upheaval;
+    font-size: 65px;
+    max-width: 650px;
+    text-align: left;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode h2 {
+    color: #72bddb;
+    font-family: upheaval;
+    font-size: 40px;
+    max-width: 900px;
+    margin: 1em auto;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .headerimg {
+    background-image: url('gengar.png');
+    background-size: contain;
+    height: 250px;
+    width: 250px;
+}
+
+body.dark-mode .leftheader {
+    background-image: linear-gradient(to right, #240e42 , #3c1c69, #3c1c69, #240e42);
+    height: 1em;
+    display: flex;
+    max-width: 875px;
+    align-items: center;
+    padding: 0.5em;
+
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 8px;
+
+    box-shadow:
+        inset 0 2px 4px rgba(0,0,0,0.15),
+        inset 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+body.dark-mode button {
+    width: 250px;
+    height: 3em;
+    margin: 15px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #240e42 , #3c1c69, #3c1c69, #240e42);
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+body.dark-mode a {
+    text-decoration: none;
+    color: #72bddb;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .battle {
+    color: black;
+}
+
+
+
+
+/* Battle Animations */
+
+#charmanderAni {
+    height: 50px;
+    width: 50px;
+    border: solid red 2px;
 }
