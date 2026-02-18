@@ -20,16 +20,20 @@ Checkbox.addEventListener('change', function () {
 });
 
 
-//Battle animations
+//Battle animations -> will move to css eventually
 
-const charmanderMove = [
-    { transform: "rotate(360deg) translate3d(-50%, -50%, 0)" },
-];
+const battleButton = document.getElementById('battlebutton');
+const battleRows = document.querySelectorAll('.battle-player, .battle-opponent');
 
-const charmanderTiming = {
-    duration: 3000,
-    iterations: Infinity,
-};
+battleButton.addEventListener('click', function() {
+    battleRows.forEach(row => row.classList.remove('battle-active'));
 
-document.getElementById('charmanderAni').animate(charmanderMove, charmanderTiming);
-console.log('Starting animation');
+    battleButton.textContent = 'Restart Battle';
+
+    battleRows.forEach((row, index) => {
+        setTimeout(() => {
+            row.classList.add('battle-active');
+        }, index * 2000);
+    });
+});
+

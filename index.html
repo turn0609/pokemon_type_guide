@@ -160,12 +160,27 @@
         A battle might look something like this:
     </p>
 
-    <p class="battle">
-       * You lead with a <span id="fire" class="battletype">fire-type</span> pokémon.
-        <br>* The opponent is a <span id="water" class="battletype">water-type</span>.
-        <br>* You can safely switch to a <span id="grass" class="battletype">grass-type</span> to both avoid the hard-hitting <span id="water" class="battletype">water-type</span> attack and hit back with an effective <span id="grass" class="battletype">grass-type</span> attack.
-        <br>* Your opponent then switches to a <span id="fire" class="battletype">fire-type</span> to counter your <span id="grass" class="battletype">grass-type</span> and you can switch again to your <span id="water" class="battletype">water-type</span> to avoid weakness and create a better match-up.
-    </p>
+    <div class="recessed-card">
+        <div class="centerimg">
+        <button id="battlebutton"> Start Battle </button>
+        </div>
+        <div class="battle-player">
+            <img src="charmander.png" height="100px">
+            <p class="battle"> You lead with a <span id="fire" class="battletype">fire-type</span> pokémon. </p>
+        </div>
+        <div class="battle-opponent">
+            <p class="battle">  The opponent is a <span id="water" class="battletype">water-type</span>. </p>
+            <img src="squirtle.png" height="100px">
+        </div>
+        <div class="battle-player">
+            <img src="bulbasaur.png" height="100px">
+            <p class="battle">  You can safely switch to a <span id="grass" class="battletype">grass-type</span> to both avoid the hard-hitting <span id="water" class="battletype">water-type</span> attack and hit back with an effective <span id="grass" class="battletype">grass-type</span> attack. </p>
+        </div>
+        <div class="battle-opponent">
+            <p class="battle">  Your opponent then switches to a <span id="fire" class="battletype">fire-type</span> to counter your <span id="grass" class="battletype">grass-type</span> and you can switch again to your <span id="water" class="battletype">water-type</span> to avoid weakness and create a better match-up. </p>
+            <img src="charmander.png" height="100px">
+        </div>
+    </div>
 
     <p class="lasttext">This is just a basic example of having type coverage within your team.
         Having all 6 pokemon on your team allows you to create complementary pairs and trios of pokémon within your party.
@@ -178,12 +193,8 @@
         <img src="pokeball.webp" height="30px">
     </div>
 
-    <div id="charmanderAni">
-        <img src="charmander_ani.png">
-    </div>
-
-    <div>
-        <p>Dark mode</p>
+    <div class="dark-mode-toggle">
+        <label for="toggle-dark">Dark Mode</label>
         <input type="checkbox" id="toggle-dark">
     </div>
 
