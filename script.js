@@ -29,7 +29,7 @@ battleButton.addEventListener('click', function() {
     battleButton.textContent = 'Restart Battle';
     battleSteps.forEach(row => row.classList.remove('battle-active'));
     battleSteps.forEach((row, index) => {
-        setTimeout(function () {row.classList.add('battle-active');}, index * 2000);
+        setTimeout(() => { row.classList.add('battle-active'); }, index * 2000);
     });
 });
 
